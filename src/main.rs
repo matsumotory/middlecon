@@ -56,7 +56,8 @@ fn main() {
     }
 }
 
-fn worker(insock: mpsc::UnboundedReceiver<net::TcpStream>, connections: Arc<Mutex<HashMap<SocketAddr, mpsc::UnboundedSender<String>>>>) {
+fn worker(insock: mpsc::UnboundedReceiver<net::TcpStream>,
+          connections: Arc<Mutex<HashMap<SocketAddr, mpsc::UnboundedSender<String>>>>) {
     let mut core = Core::new().unwrap();
     let handle = core.handle();
 
