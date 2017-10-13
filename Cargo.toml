@@ -1,0 +1,11 @@
+[package]
+name = "timer_tracer"
+version = "0.1.0"
+authors = ["MATSUMOTO Ryosuke <matsu1229@gmail.com>"]
+
+[dependencies]
+futures = "0.1"
+tokio-core = "0.1"
+tokio-io = "0.1"
+num_cpus = "1.7.0"
+
